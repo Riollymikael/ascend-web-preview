@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ascend Web</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
+    <meta
+      name="description"
+      content="Ascend Web — desenvolvimento web profissional."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell" id="inicio">
+      <video
+        class="bg-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+      >
+        <source src="background-video.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay"></div>
+      <div class="grid-overlay"></div>
+
+      <header class="topbar container">
+        <nav class="nav" aria-label="Menu principal">
+          <a href="#">Início</a>
+          <a href="#projetos">Portfólio</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#manutencao">Manutenção</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </header>
+
+      <main class="hero container">
+        <section class="hero-copy" aria-label="Mensagem principal">
+          <div class="eyebrow">DESENVOLVIMENTO WEB PROFISSIONAL</div>
+
+          <h1>
+            Transformamos<br />
+            ideias em<br />
+            <span class="gradient-text">experiências</span><br />
+            digitais.
+          </h1>
+
+          <p>
+            Criamos sites modernos, rápidos e responsivos para empresas que
+            querem fortalecer sua presença digital, apresentar seus serviços com
+            profissionalismo e facilitar o contato de novos clientes.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">Conhecer projetos</a>
+            <a href="https://wa.me/5548984683627" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+          </div>
+
+          <div class="hero-metrics" aria-label="Principais métricas">
+            <div>
+              <span class="metric-label">100%</span>
+              <small>Responsivo</small>
+            </div>
+            <div>
+              <span class="metric-label">+100</span>
+              <small>Projetos</small>
+            </div>
+            <div>
+              <span class="metric-label">24h</span>
+              <small>Atendimento</small>
+            </div>
+          </div>
+        </section>
+
+        <aside class="hero-visual" aria-label="Logo Ascend Web decorativo">
+          <div class="frame-bezel" aria-hidden="true">
+            <div class="line line-top"></div>
+            <div class="line line-right"></div>
+          </div>
+
+          <div class="brand-panel">
+            <img class="brand-image brand-main" src="assets/logo-main-transparent.png" alt="Logo Ascend Web" width="203" height="257" decoding="async" loading="eager" fetchpriority="high" />
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <div class="scroll-brand" aria-label="Logos Ascend Web">
+      <a class="brand-header" href="#inicio" aria-label="Ascend Web — voltar ao início">
+        <img
+          class="brand-image brand-header-icon"
+          src="assets/logo-corner-transparent.png"
+          alt="" width="40" height="42" decoding="async" loading="lazy" />
+        <img
+          class="brand-image brand-wordmark"
+          src="assets/logo-wordmark.png"
+          alt="" width="66" height="23" decoding="async" loading="lazy" />
+      </a>
+      <img
+        class="brand-image brand-mini"
+        src="assets/logo-corner-transparent.png"
+        alt="Ascend Web" width="40" height="42" decoding="async" loading="lazy" />
+    </div>
+
+    <div class="ribbon-journey">
+      <svg class="journey-ribbon" aria-hidden="true" preserveAspectRatio="none"></svg>
+    <section class="feature-section" id="diferenciais" aria-label="Diferenciais da Ascend Web">
+      <div class="feature-bg-shade" aria-hidden="true"></div>
+
+      <svg class="wave-art" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="waveGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fff0a8" stop-opacity="0.16" />
+            <stop offset="0.42" stop-color="#ffc940" stop-opacity="1" />
+            <stop offset="0.58" stop-color="#fff0a8" stop-opacity="1" />
+            <stop offset="1" stop-color="#c98212" stop-opacity="0.2" />
+          </linearGradient>
+        </defs>
+        <g class="wave-left">
+          <path class="wave-ribbon" d="M-90 -40 C80 80 75 250 5 390 C-72 544 64 640 370 790 C480 844 540 864 620 920" />
+          <path d="M-72 -50 C70 102 66 258 3 395 C-57 528 75 641 360 775 C463 824 550 862 632 932" />
+          <path d="M-56 -48 C54 106 54 266 15 396 C-26 526 104 646 388 779 C486 826 566 861 646 934" />
+          <path d="M-43 -54 C42 112 42 277 25 400 C8 529 134 649 416 785 C510 831 582 867 660 940" />
+          <path d="M-26 -60 C24 122 30 287 38 405 C49 535 169 658 445 794 C536 839 604 874 676 946" />
+        </g>
+        <g class="wave-right">
+          <path class="wave-ribbon" d="M1530 -50 C1360 92 1370 250 1435 392 C1510 548 1380 648 1070 792 C960 844 900 866 820 920" />
+          <path d="M1512 -56 C1370 100 1378 260 1438 400 C1498 532 1368 646 1082 778 C979 826 892 864 810 930" />
+          <path d="M1496 -52 C1388 106 1388 270 1425 400 C1463 532 1337 652 1053 782 C954 828 874 862 794 936" />
+          <path d="M1482 -58 C1400 112 1400 278 1415 404 C1430 532 1304 656 1024 789 C931 833 858 869 780 942" />
+          <path d="M1465 -62 C1418 120 1412 288 1402 410 C1390 540 1270 662 995 797 C905 841 836 875 764 948" />
+        </g>
+      </svg>
+
+      <div class="feature-cards" aria-label="Principais diferenciais">
+        <article class="feature-card" data-tilt>
+          <div class="feature-content">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <rect x="7" y="7" width="34" height="27" rx="3" />
+                <path d="M17 41h14M24 34v7M15 27l14-14M26 13l4 4M13 29l5-1" />
+              </svg>
+            </div>
+            <span class="feature-number">01</span>
+            <h2>Design personalizado</h2>
+            <p>Cada projeto é desenvolvido de acordo com a identidade, segmento e objetivo de cada empresa.</p>
+          </div>
+        </article>
+
+        <article class="feature-card" data-tilt>
+          <div class="feature-content">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <rect x="4" y="8" width="29" height="23" rx="2" />
+                <path d="M12 37h13M18.5 31v6" />
+                <rect x="29" y="20" width="13" height="21" rx="2" />
+                <path d="M33 24h5M34 37h3" />
+              </svg>
+            </div>
+            <span class="feature-number">02</span>
+            <h2>Responsivo</h2>
+            <p>Experiência otimizada para computadores, tablets e principalmente smartphones.</p>
+          </div>
+        </article>
+
+        <article class="feature-card" data-tilt>
+          <div class="feature-content">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M7 10h34v23H24l-9 8v-8H7z" />
+                <circle cx="17" cy="21" r="1.5" />
+                <circle cx="24" cy="21" r="1.5" />
+                <circle cx="31" cy="21" r="1.5" />
+              </svg>
+            </div>
+            <span class="feature-number">03</span>
+            <h2>Foco em contato</h2>
+            <p>Estrutura estratégica com chamadas e integrações que facilitam o contato entre o visitante e sua empresa.</p>
+          </div>
+        </article>
+
+        <article class="feature-card" data-tilt>
+          <div class="feature-content">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="m17 13-11 11 11 11M31 13l11 11-11 11M27 8l-6 32" />
+              </svg>
+            </div>
+            <span class="feature-number">04</span>
+            <h2>Código próprio</h2>
+            <p>Sites desenvolvidos sem depender de construtores pagos para permanecerem funcionando.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio-showcase" id="projetos" aria-labelledby="portfolio-title">
+      <svg class="portfolio-wave-art" viewBox="0 0 1440 240" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="portfolioWaveGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fff0a8" stop-opacity="0.16" />
+            <stop offset="0.42" stop-color="#ffc940" stop-opacity="1" />
+            <stop offset="0.58" stop-color="#fff0a8" stop-opacity="1" />
+            <stop offset="1" stop-color="#c98212" stop-opacity="0.2" />
+          </linearGradient>
+        </defs>
+        <g class="wave-left">
+          <path class="wave-ribbon" d="M-80 122 C130 130 300 96 455 49 C570 14 650 0 722 8" />
+          <path d="M-80 136 C130 144 304 108 462 63 C574 31 654 15 722 22" />
+          <path d="M-80 150 C135 158 312 123 470 78 C582 47 660 31 722 36" />
+          <path d="M-80 164 C140 172 320 138 478 94 C588 64 664 47 722 50" />
+          <path d="M-80 178 C145 186 328 153 486 109 C594 81 668 63 722 64" />
+        </g>
+        <g class="wave-right">
+          <path class="wave-ribbon" d="M718 8 C800 14 876 37 990 70 C1145 115 1310 132 1520 118" />
+          <path d="M718 22 C800 28 880 52 996 84 C1150 128 1312 146 1520 132" />
+          <path d="M718 36 C800 42 884 66 1002 98 C1155 141 1315 160 1520 146" />
+          <path d="M718 50 C802 56 888 80 1008 112 C1160 154 1318 174 1520 160" />
+          <path d="M718 64 C804 70 892 94 1014 126 C1166 167 1322 188 1520 174" />
+        </g>
+      </svg>
+
+      <header class="portfolio-heading">
+        <p class="portfolio-eyebrow">PORTFÓLIO</p>
+        <h2 id="portfolio-title">Projetos criados para <span>negócios reais.</span></h2>
+        <p class="portfolio-intro">
+          Conheça alguns dos projetos desenvolvidos pela Ascend Web. Cada site é planejado de acordo com
+          a identidade, o público e os objetivos de cada negócio.
+        </p>
+      </header>
+
+      <div class="portfolio-grid" aria-label="Projetos em destaque">
+        <article class="portfolio-card" aria-labelledby="portfolio-nutri-title">
+          <div class="portfolio-card-reveal">
+            <img
+              class="portfolio-card-image"
+              src="assets/project-nutrivida-screen-v2.webp"
+              alt="Prévia do site de nutrição NutriVida" width="1671" height="941" decoding="async" loading="lazy" srcset="assets/project-nutrivida-screen-v2-800.webp 800w, assets/project-nutrivida-screen-v2.webp 1671w" sizes="(max-width: 600px) calc(100vw - 36px), (max-width: 980px) calc((100vw - 76px) / 2), (max-width: 1300px) calc((100vw - 160px) / 3), 388px" />
+            <div class="portfolio-card-content">
+              <p class="portfolio-card-category">SAÚDE · NUTRIÇÃO</p>
+              <h3 id="portfolio-nutri-title">Nutricionista</h3>
+              <p>Site profissional para apresentar serviços, acompanhamento nutricional e facilitar o contato.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card" aria-labelledby="portfolio-psychology-title">
+          <div class="portfolio-card-reveal">
+            <div class="portfolio-card-mockup">
+              <img
+                class="portfolio-card-image"
+                src="assets/project-psychologia-notebook.webp"
+                alt="Site Psicologia &amp; Vida exibido na tela do notebook" width="1672" height="941" decoding="async" loading="lazy" srcset="assets/project-psychologia-notebook-800.webp 800w, assets/project-psychologia-notebook.webp 1672w" sizes="(max-width: 600px) calc(100vw - 36px), (max-width: 980px) calc((100vw - 76px) / 2), (max-width: 1300px) calc((100vw - 160px) / 3), 388px" />
+            </div>
+            <div class="portfolio-card-content">
+              <p class="portfolio-card-category">SAÚDE · PSICOLOGIA</p>
+              <h3 id="portfolio-psychology-title">Psicologia</h3>
+              <p>Projeto acolhedor pensado para apresentar a abordagem psicológica e facilitar o primeiro contato.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card" aria-labelledby="portfolio-monvero-title">
+          <div class="portfolio-card-reveal">
+            <img
+              class="portfolio-card-image"
+              src="assets/project-monvero-hd.webp"
+              alt="Prévia da loja virtual Monvero de moda masculina" width="1672" height="941" decoding="async" loading="lazy" srcset="assets/project-monvero-hd-800.webp 800w, assets/project-monvero-hd.webp 1672w" sizes="(max-width: 600px) calc(100vw - 36px), (max-width: 980px) calc((100vw - 76px) / 2), (max-width: 1300px) calc((100vw - 160px) / 3), 388px" />
+            <div class="portfolio-card-content">
+              <p class="portfolio-card-category">E-COMMERCE · MODA MASCULINA</p>
+              <h3 id="portfolio-monvero-title">Monvero | E-commerce</h3>
+              <p>Loja virtual responsiva para apresentar coleções e facilitar a compra de moda masculina.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects-section projects-section--large" id="project-nutrivida" aria-label="Projeto NutriVida">
+      <div class="projects-glow" aria-hidden="true"></div>
+      <div class="projects-visual">
+        <figure class="projects-frame">
+          <img
+            class="projects-image"
+            src="assets/project-nutrivida-screen-v2.webp"
+            alt="Projeto NutriVida apresentado em um notebook sobre uma mesa ao ar livre" width="1671" height="941" decoding="async" loading="lazy" srcset="assets/project-nutrivida-screen-v2-800.webp 800w, assets/project-nutrivida-screen-v2.webp 1671w" sizes="(max-width: 1488px) calc(100vw - 48px), 1440px" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="projects-section projects-section--large" aria-label="Projeto Distrito Barber Club">
+      <div class="projects-glow" aria-hidden="true"></div>
+      <div class="projects-visual">
+        <figure class="projects-frame">
+          <img
+            class="projects-image"
+            src="assets/project-distrito-hd.webp"
+            alt="Projeto Distrito Barber Club apresentado em um notebook sobre uma mesa ao ar livre" width="1672" height="941" decoding="async" loading="lazy" srcset="assets/project-distrito-hd-800.webp 800w, assets/project-distrito-hd.webp 1672w" sizes="(max-width: 1488px) calc(100vw - 48px), 1440px" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="projects-section projects-section--large" aria-label="Projeto SolarPrime Energia">
+      <div class="projects-glow" aria-hidden="true"></div>
+      <div class="projects-visual">
+        <figure class="projects-frame">
+          <img
+            class="projects-image"
+            src="assets/project-solarprime-hd.webp"
+            alt="Projeto SolarPrime Energia exibido em um notebook diante de painéis solares ao pôr do sol" width="1672" height="941" decoding="async" loading="lazy" srcset="assets/project-solarprime-hd-800.webp 800w, assets/project-solarprime-hd.webp 1672w" sizes="(max-width: 1488px) calc(100vw - 48px), 1440px" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="projects-section projects-section--large" id="project-monvero" aria-label="Projeto Monvero">
+      <div class="projects-glow" aria-hidden="true"></div>
+      <div class="projects-visual">
+        <figure class="projects-frame">
+          <img
+            class="projects-image"
+            src="assets/project-monvero-hd.webp"
+            alt="Projeto Monvero exibido em um notebook com uma loja de moda masculina" width="1672" height="941" decoding="async" loading="lazy" srcset="assets/project-monvero-hd-800.webp 800w, assets/project-monvero-hd.webp 1672w" sizes="(max-width: 1488px) calc(100vw - 48px), 1440px" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-collection" id="mais-projetos" aria-label="Mais projetos em destaque">
+      <svg class="collection-ribbon" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="ribbon-gold" x1="0" y1="0" x2="1" y2="0">
+            <stop stop-color="#946019" stop-opacity=".15" />
+            <stop offset=".45" stop-color="#e6aa30" />
+            <stop offset=".52" stop-color="#fff0af" />
+            <stop offset=".65" stop-color="#e6aa30" />
+            <stop offset="1" stop-color="#946019" stop-opacity=".15" />
+          </linearGradient>
+        </defs>
+        <g class="ribbon-mesh"></g>
+        <g class="ribbon-strands"></g>
+      </svg>
+      <div class="collection-grid">
+        <article class="collection-card" style="--card-order: 0">
+          <div class="collection-card-reveal"><div class="collection-card-float">
+            <button class="collection-preview collection-image-preview" type="button" aria-label="Ampliar: Site de uma clínica odontológica apresentado em um notebook"><img src="assets/project-odontologia.webp" alt="Site de uma clínica odontológica apresentado em um notebook" width="1672" height="941" decoding="async" loading="lazy" srcset="assets/project-odontologia-800.webp 800w, assets/project-odontologia.webp 1672w" sizes="(max-width: 650px) calc(100vw - 44px), (max-width: 1488px) calc((100vw - 160px) / 2), 665px" /></button>
+            <div class="collection-card-copy">
+              <p class="collection-category">SAÚDE · ODONTOLOGIA</p>
+              <h2>Clínica Odontológica</h2>
+              <p>Um sorriso de confiança começa com uma presença digital acolhedora e profissional.</p>
+              <button class="collection-preview" type="button">Ver projeto <span aria-hidden="true">↗</span></button>
+            </div>
+          </div></div>
+        </article>
+        <article class="collection-card" style="--card-order: 1">
+          <div class="collection-card-reveal"><div class="collection-card-float">
+            <button class="collection-preview collection-image-preview" type="button" aria-label="Ampliar: Site SolarPrime Energia apresentado em um notebook"><img src="assets/project-solarprime-hd.webp" alt="Site SolarPrime Energia apresentado em um notebook" width="1672" height="941" decoding="async" loading="lazy" srcset="assets/project-solarprime-hd-800.webp 800w, assets/project-solarprime-hd.webp 1672w" sizes="(max-width: 650px) calc(100vw - 44px), (max-width: 1488px) calc((100vw - 160px) / 2), 665px" /></button>
+            <div class="collection-card-copy">
+              <p class="collection-category">ENERGIA · SUSTENTABILIDADE</p>
+              <h2>SolarPrime Energia</h2>
+              <p>Uma experiência que transforma energia limpa em novas possibilidades para o negócio.</p>
+              <button class="collection-preview" type="button">Ver projeto <span aria-hidden="true">↗</span></button>
+            </div>
+          </div></div>
+        </article>
+        <article class="collection-card" style="--card-order: 2">
+          <div class="collection-card-reveal"><div class="collection-card-float">
+            <button class="collection-preview collection-image-preview" type="button" aria-label="Ampliar: Site de uma clínica de estética apresentado em um notebook"><img src="assets/project-estetica.webp" alt="Site de uma clínica de estética apresentado em um notebook" width="1672" height="941" decoding="async" loading="lazy" srcset="assets/project-estetica-800.webp 800w, assets/project-estetica.webp 1672w" sizes="(max-width: 650px) calc(100vw - 44px), (max-width: 1488px) calc((100vw - 160px) / 2), 665px" /></button>
+            <div class="collection-card-copy">
+              <p class="collection-category">ESTÉTICA · BEM-ESTAR</p>
+              <h2>Clínica de Estética</h2>
+              <p>Leveza e elegância para apresentar tratamentos, valorizar o cuidado e aproximar clientes.</p>
+              <button class="collection-preview" type="button">Ver projeto <span aria-hidden="true">↗</span></button>
+            </div>
+          </div></div>
+        </article>
+        <article class="collection-card" style="--card-order: 3">
+          <div class="collection-card-reveal"><div class="collection-card-float">
+            <button class="collection-preview collection-image-preview" type="button" aria-label="Ampliar: Site Distrito Barber Club apresentado em um notebook"><img src="assets/project-distrito-hd.webp" alt="Site Distrito Barber Club apresentado em um notebook" width="1672" height="941" decoding="async" loading="lazy" srcset="assets/project-distrito-hd-800.webp 800w, assets/project-distrito-hd.webp 1672w" sizes="(max-width: 650px) calc(100vw - 44px), (max-width: 1488px) calc((100vw - 160px) / 2), 665px" /></button>
+            <div class="collection-card-copy">
+              <p class="collection-category">BARBEARIA · ESTILO</p>
+              <h2>Barbearia Premium</h2>
+              <p>Personalidade em cada detalhe para destacar o espaço, os serviços e facilitar o agendamento.</p>
+              <button class="collection-preview" type="button">Ver projeto <span aria-hidden="true">↗</span></button>
+            </div>
+          </div></div>
+        </article>
+      </div>
+    </section>
+    </div>
+    <section class="about-ascend" id="sobre" aria-labelledby="about-title">
+      <div class="about-growth-background" aria-hidden="true">
+        <div class="about-growth-columns">
+          <i style="--bar-height: 12%; --bar-index: 0"></i><i style="--bar-height: 22%; --bar-index: 1"></i>
+          <i style="--bar-height: 33%; --bar-index: 2"></i><i style="--bar-height: 46%; --bar-index: 3"></i>
+          <i style="--bar-height: 61%; --bar-index: 4"></i><i style="--bar-height: 78%; --bar-index: 5"></i>
+          <i style="--bar-height: 100%; --bar-index: 6"></i>
+        </div>
+        <svg viewBox="0 0 1400 600" preserveAspectRatio="none">
+          <defs><linearGradient id="about-arrow-gold"><stop stop-color="#9e5910"/><stop offset=".6" stop-color="#ffc34f"/><stop offset="1" stop-color="#fff0b0"/></linearGradient></defs>
+          <path class="about-background-arrow" d="M-50 590 Q650 510 1370 40" fill="none" stroke="url(#about-arrow-gold)" stroke-width="5" />
+          <path d="M1334 45 L1390 24 L1376 83" fill="none" stroke="#ffd77b" stroke-width="6" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="about-layout">
+        <div class="about-copy">
+          <p class="about-eyebrow">SOBRE A ASCEND WEB</p>
+          <h2 id="about-title">Criamos presença digital para empresas que querem <span>crescer.</span></h2>
+          <p>A Ascend Web desenvolve sites personalizados para empresas que buscam apresentar seu negócio com mais profissionalismo, fortalecer sua presença digital e facilitar o contato de potenciais clientes.</p>
+          <p>Cada projeto é construído de acordo com a identidade, segmento e objetivo da empresa, combinando design, responsividade, organização e tecnologia.</p>
+          <p>Trabalhamos com desenvolvimento em código, permitindo maior liberdade e reduzindo a dependência de plataformas que exigem mensalidades apenas para manter o site ativo.</p>
+        </div>
+        <figure class="about-visual">
+          <div class="about-visual-surface">
+            <img src="assets/about-ascend-workspace.webp" alt="Notebook e celular apresentando um site profissional em um ambiente com iluminação dourada" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/about-ascend-workspace-800.webp 800w, assets/about-ascend-workspace.webp 1122w" sizes="(max-width: 760px) calc(100vw - 48px), 520px" />
+            <div class="about-laptop-screen" aria-label="Exemplo de site da Agência Digital">
+              <div class="about-screen-nav"><strong>♧ Agência <em>Digital</em></strong><span>Início　 Serviços　 Portfólio　 Sobre　 Contato</span><b>Solicitar orçamento</b></div>
+              <div class="about-screen-message"><h3>Sua empresa com<br/>presença digital<br/><em>de verdade.</em></h3><p>Sites e estratégias digitais para fortalecer sua marca e atrair clientes.</p><span>Solicitar orçamento ↗</span><small>Conhecer serviços</small></div>
+            </div>
+            <div class="about-phone-screen" aria-label="Versão do site no celular"><strong>♧ Agência <em>Digital</em></strong><h3>Sua empresa<br/>com presença<br/>digital<br/><em>de verdade.</em></h3><p>Fortaleça sua marca.<br/>Conquiste novos clientes.</p><span>Solicitar orçamento</span></div>
+            <svg class="about-live-chart" viewBox="0 0 360 300" role="img" aria-label="Gráfico animado com barras e seta em crescimento">
+              <defs>
+                <linearGradient id="about-bar-gold" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#86500e"/><stop offset=".5" stop-color="#dc9629"/><stop offset="1" stop-color="#ffe3a0"/></linearGradient>
+                <linearGradient id="about-chart-arrow"><stop stop-color="#e8a63e"/><stop offset="1" stop-color="#fff0bd"/></linearGradient>
+              </defs>
+              <g class="about-chart-bars" fill="url(#about-bar-gold)" stroke="#ffd47c" stroke-width="1.3">
+                <rect x="54" y="220" width="31" height="50" rx="3" style="--step: 0"/>
+                <rect x="108" y="185" width="31" height="85" rx="3" style="--step: 1"/>
+                <rect x="162" y="144" width="31" height="126" rx="3" style="--step: 2"/>
+                <rect x="216" y="96" width="31" height="174" rx="3" style="--step: 3"/>
+                <rect x="270" y="44" width="31" height="226" rx="3" style="--step: 4"/>
+              </g>
+              <path id="about-growth-route" class="about-growth-route" d="M30 224 C135 208 230 116 313 22" fill="none" stroke="url(#about-chart-arrow)" stroke-width="5" stroke-linecap="round" pathLength="1"/>
+              <g class="about-moving-arrow" fill="#ffe8ab">
+                <path d="M-15 -10 L14 0 L-15 10 L-9 0 Z"/>
+                <animateMotion dur="6s" repeatCount="indefinite" rotate="auto" keyPoints="0;1;1" keyTimes="0;.75;1" calcMode="linear"><mpath href="#about-growth-route"/></animateMotion>
+              </g>
+            </svg>
+            <div class="about-visual-features" aria-label="Pilares do nosso trabalho">
+              <span><b aria-hidden="true">&lt;/&gt;</b>Desenvolvimento<br/>em código</span>
+              <span><b aria-hidden="true">◇</b>Liberdade<br/>para evoluir</span>
+              <span><b aria-hidden="true">◎</b>Foco em<br/>resultados</span>
+              <span><b aria-hidden="true">↗</b>Presença digital<br/>para crescer</span>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+    <section class="services-section" id="servicos" aria-labelledby="services-title">
+      <svg class="services-ribbon" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+        <defs><linearGradient id="services-ribbon-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9e601b" stop-opacity=".3"/><stop offset=".4" stop-color="#ffc347"/><stop offset=".58" stop-color="#fff0b3"/><stop offset="1" stop-color="#b77b1c" stop-opacity=".3"/></linearGradient></defs>
+      </svg>
+      <header class="services-heading">
+        <p class="services-eyebrow">SERVIÇOS</p>
+        <h2 id="services-title">Muito além de uma<br/>página <span>bonita.</span></h2>
+        <p>Estrutura, design e desenvolvimento pensados para representar profissionalmente sua empresa na internet.</p>
+      </header>
+      <div class="services-grid">
+        <article class="service-card" style="--service-order: 0">
+          <div class="service-card-reveal"><div class="service-card-surface">
+            <div class="service-art service-art-site" aria-hidden="true">
+              <div class="service-browser"><div class="service-browser-top"><i></i><i></i><i></i><span>suaempresa.com.br</span></div>
+                <div class="service-site-nav"><b>◆ SUA MARCA</b><span>Sobre　 Serviços　 Contato</span></div>
+                <div class="service-site-hero"><div><small>SUA EMPRESA, EM DESTAQUE</small><strong>Uma presença<br/>à sua altura.</strong><em>Conheça nossa empresa ↗</em></div><div class="service-site-sculpture"><i></i><i></i><i></i></div></div>
+                <div class="service-site-tiles"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <div class="service-copy"><span class="service-number">01</span><h3>Site Institucional</h3><p>Desenvolvimento de sites completos para apresentação da empresa, serviços, diferenciais e formas de contato.</p></div>
+          </div></div>
+        </article>
+        <article class="service-card" style="--service-order: 1">
+          <div class="service-card-reveal"><div class="service-card-surface">
+            <div class="service-art service-art-landing" aria-hidden="true">
+              <div class="service-landing-window"><span class="service-mini-label">SUA PRÓXIMA CONQUISTA</span><strong>Um objetivo.<br/><em>Mais resultados.</em></strong><div class="service-landing-lines"><i></i><i></i></div><span class="service-mini-cta">Quero saber mais <b>↗</b></span></div>
+              <div class="service-conversion"><span>↗</span><div><small>FEITA PARA CONVERTER</small><b>Do clique ao contato.</b></div></div>
+              <div class="service-cursor">↖</div>
+            </div>
+            <div class="service-copy"><span class="service-number">02</span><h3>Landing Pages</h3><p>Páginas focadas em serviços, campanhas ou objetivos específicos de divulgação e conversão.</p></div>
+          </div></div>
+        </article>
+        <article class="service-card" style="--service-order: 2">
+          <div class="service-card-reveal"><div class="service-card-surface">
+            <div class="service-art service-art-responsive" aria-hidden="true">
+              <div class="service-desktop"><div class="service-device-screen"><span>◆ SUA MARCA</span><strong>Seu site.<br/>Em toda tela.</strong><i></i><div class="service-device-tiles"><b></b><b></b><b></b></div></div><div class="service-desktop-base"></div></div>
+              <div class="service-tablet"><div class="service-device-screen"><span>◆ SUA MARCA</span><strong>Seu site.<br/>Em toda tela.</strong><i></i></div></div>
+              <div class="service-phone"><div class="service-device-screen"><span>◆</span><strong>Seu site.<br/>Em toda<br/>tela.</strong><i></i></div></div>
+            </div>
+            <div class="service-copy"><span class="service-number">03</span><h3>Design Responsivo</h3><p>Experiência adaptada para celulares, tablets, notebooks e computadores.</p></div>
+          </div></div>
+        </article>
+        <article class="service-card" style="--service-order: 3">
+          <div class="service-card-reveal"><div class="service-card-surface">
+            <div class="service-art service-art-contact" aria-hidden="true">
+              <div class="service-chat"><div class="service-chat-header"><span>◉</span><div><strong>Sua empresa</strong><small>Vamos conversar?</small></div><b>···</b></div><div class="service-chat-message">Olá! Quero conhecer seus serviços.<small>09:41</small></div><div class="service-chat-message service-chat-reply">Olá! Como podemos ajudar?<small>09:42　✓✓</small></div><div class="service-chat-input">Digite sua mensagem <span>➤</span></div></div>
+              <div class="service-chat-badge"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M26 15a10 10 0 0 1-15 9l-6 2 2-6a10 10 0 1 1 19-5Z"/><path d="M12 10c-4 2 4 12 8 9l-3-3-2 1-3-4 1-1Z"/></svg></div>
+            </div>
+            <div class="service-copy"><span class="service-number">04</span><h3>WhatsApp</h3><p>Integração de chamadas estratégicas para facilitar o contato de potenciais clientes.</p></div>
+          </div></div>
+        </article>
+        <article class="service-card" style="--service-order: 4">
+          <div class="service-card-reveal"><div class="service-card-surface">
+            <div class="service-art service-art-custom" aria-hidden="true">
+              <div class="service-brand-preview"><span>IDENTIDADE DIGITAL</span><strong>Sua marca.<br/><em>Sua essência.</em></strong><div class="service-brand-line"></div><small>DESIGN COM PERSONALIDADE</small></div>
+              <div class="service-palette"><span>PALETA DA MARCA</span><div><i></i><i></i><i></i><i></i></div><small>Feito para o seu negócio.</small></div>
+              <div class="service-type-chip">Aa<span>TIPOGRAFIA</span></div>
+            </div>
+            <div class="service-copy"><span class="service-number">05</span><h3>Personalização</h3><p>Cores, estrutura, conteúdo e identidade desenvolvidos para representar cada negócio.</p></div>
+          </div></div>
+        </article>
+        <article class="service-card" style="--service-order: 5">
+          <div class="service-card-reveal"><div class="service-card-surface">
+            <div class="service-art service-art-support" aria-hidden="true">
+              <div class="service-support-panel"><div class="service-support-top"><span>◆ CUIDADO CONTÍNUO</span><b>● Ativo</b></div><strong>Seu site bem cuidado.</strong><div class="service-support-row"><i>✓</i><span>Atualizações</span><b>Em dia</b></div><div class="service-support-row"><i>✓</i><span>Funcionamento</span><b>Verificado</b></div><div class="service-support-row"><i>✓</i><span>Acompanhamento</span><b>Próximo</b></div></div>
+              <div class="service-support-shield"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M32 6 52 14v18c0 13-20 25-20 25S12 45 12 32V14Z"/><path d="m22 31 7 7 14-16"/></svg></div>
+            </div>
+            <div class="service-copy"><span class="service-number">06</span><h3>Suporte Técnico</h3><p>Opção de manutenção mensal para correções, acompanhamento técnico e pequenos ajustes.</p></div>
+          </div></div>
+        </article>
+      </div>
+    </section>
+    <section class="maintenance-section" id="manutencao" aria-labelledby="maintenance-title">
+      <svg class="maintenance-ribbon" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+        <defs><linearGradient id="maintenance-ribbon-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9e601b" stop-opacity=".3"/><stop offset=".4" stop-color="#ffc347"/><stop offset=".58" stop-color="#fff0b3"/><stop offset="1" stop-color="#b77b1c" stop-opacity=".3"/></linearGradient></defs>
+      </svg>
+      <div class="maintenance-layout">
+        <div class="maintenance-copy">
+          <p class="maintenance-eyebrow">MANUTENÇÃO</p>
+          <h2 id="maintenance-title">Você cuida da empresa.<br/><span>Nós cuidamos do site.</span></h2>
+          <p class="maintenance-intro">Depois da entrega, você pode optar pelo serviço mensal de manutenção e suporte técnico da Ascend Web.</p>
+          <ul class="maintenance-benefits">
+            <li style="--maintenance-step: 0">Correção de problemas relacionados ao código.</li>
+            <li style="--maintenance-step: 1">Correção de arquivos internos do site.</li>
+            <li style="--maintenance-step: 2">Pequenas alterações de textos.</li>
+            <li style="--maintenance-step: 3">Atualização de imagens existentes.</li>
+            <li style="--maintenance-step: 4">Ajustes relacionados ao funcionamento do projeto.</li>
+            <li style="--maintenance-step: 5">Suporte técnico do site desenvolvido.</li>
+          </ul>
+          <p class="maintenance-note">Problemas externos relacionados a empresas de hospedagem, domínio ou serviços de terceiros não são controlados pela Ascend Web.</p>
+        </div>
+        <aside class="maintenance-plan" aria-labelledby="maintenance-plan-title">
+          <div class="maintenance-plan-reveal"><div class="maintenance-plan-card">
+            <div class="maintenance-plan-emblem" aria-hidden="true"><div class="maintenance-orbit"></div><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M32 7 50 15v17c0 12-18 24-18 24S14 44 14 32V15Z"/><path d="m23 31 6 6 13-14"/></svg><i></i></div>
+            <p class="maintenance-plan-label" id="maintenance-plan-title">MANUTENÇÃO OPCIONAL</p>
+            <p class="maintenance-plan-price">Sob consulta<span>plano mensal</span></p>
+            <p class="maintenance-plan-description">Suporte contínuo para manter a parte técnica do seu projeto acompanhada.</p>
+            <details class="maintenance-plan-details"><summary>Saber mais <span aria-hidden="true">↗</span></summary><p>O valor é definido conforme as necessidades do seu site. O plano é opcional e contempla as correções e os pequenos ajustes apresentados nesta seção.</p></details>
+          </div></div>
+        </aside>
+      </div>
+    </section>
+    <section class="platform-section connected-section" id="tecnologias" aria-labelledby="platform-title">
+      <svg class="platform-ribbon" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <header class="platform-heading"><p class="platform-eyebrow">TECNOLOGIA COM PROPÓSITO</p><h2 id="platform-title">Da primeira linha de código<br/>ao seu negócio <span>no ar.</span></h2><p>Ferramentas que dão forma às ideias, organizam o desenvolvimento e sustentam cada experiência digital.</p></header>
+      <div class="platform-grid">
+        <article class="platform-card" style="--platform-order: 0"><div class="platform-card-reveal"><div class="platform-card-surface">
+          <div class="platform-stage platform-stage-code" aria-hidden="true">
+            <div class="platform-icon-pair"><div class="platform-icon platform-icon-vscode"><svg viewBox="0 0 64 64"><path fill="#238adb" d="m45 3 16 7v44l-16 7L20 39 7 49 2 46V18l5-3 13 10Z"/><path fill="#0875c0" d="m45 3 16 7-41 29L7 49l-5-3 18-21Z"/><path fill="#3faaf2" d="m45 3 16 7v44l-16 7V17L15 40l-8 9-5-3V18l5-3 13 10 25 23Z"/><path fill="#0875c0" d="M7 15 45 48v13L20 39 2 18Z"/></svg></div><span class="platform-icon-link">+</span><div class="platform-icon platform-icon-github"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.14c-3.21.7-3.89-1.36-3.89-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.16 1.18A11 11 0 0 1 12 6.2c.98 0 1.96.13 2.88.39 2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.41-5.26 5.7.41.36.78 1.06.78 2.14v3.14c0 .31.21.67.79.56A11.5 11.5 0 0 0 12 .7Z"/></svg></div></div>
+            <div class="platform-code-lines"><span><b>&lt;</b> ideias <b>/&gt;</b></span><i></i><i></i><i></i></div><div class="platform-stage-tag">CÓDIGO + ORGANIZAÇÃO</div>
+          </div>
+          <div class="platform-card-copy"><p class="platform-card-kicker">01 · DESENVOLVIMENTO</p><h3>VS Code + GitHub</h3><p>É no VS Code que escrevemos os códigos do seu projeto. Com o GitHub, guardamos e organizamos o código e seu histórico de alterações.</p><span class="platform-card-footnote">Da criação à evolução do projeto.</span></div>
+        </div></div></article>
+        <article class="platform-card" style="--platform-order: 1"><div class="platform-card-reveal"><div class="platform-card-surface">
+          <div class="platform-stage platform-stage-cloud" aria-hidden="true"><div class="platform-cloud-orbit"></div><div class="platform-icon platform-icon-cloudflare"><svg viewBox="0 0 100 64"><path fill="#f48120" d="M17 52h61c10-1 14-13 7-20-3-3-8-4-12-3C69 8 43 6 34 23c-10-5-21 3-19 13C5 37 5 51 17 52Z"/><path fill="#faae40" d="M64 52h26c9-1 11-11 4-15-2-2-6-2-8-1-5-9-18-5-19 4-8-1-11 10-3 12Z"/><path d="M18 56h73" stroke="#fff0cc" stroke-width="2" stroke-linecap="round"/></svg></div><div class="platform-node platform-node-one"></div><div class="platform-node platform-node-two"></div><div class="platform-node platform-node-three"></div><div class="platform-stage-tag">SEU SITE, ONLINE</div></div>
+          <div class="platform-card-copy"><p class="platform-card-kicker">02 · HOSPEDAGEM</p><h3>Cloudflare</h3><p>Usamos a Cloudflare para publicar e hospedar sites compatíveis com a plataforma, deixando o projeto acessível na internet.</p><span class="platform-card-footnote">A estrutura certa para colocar sua ideia no ar.</span></div>
+        </div></div></article>
+        <article class="platform-card" style="--platform-order: 2"><div class="platform-card-reveal"><div class="platform-card-surface">
+          <div class="platform-stage platform-stage-data" aria-hidden="true"><div class="platform-data-stack"><i></i><i></i><i></i></div><div class="platform-icon platform-icon-supabase"><svg viewBox="0 0 64 64"><defs><linearGradient id="supabase-icon-green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3ecf8e"/><stop offset="1" stop-color="#178c62"/></linearGradient></defs><path fill="url(#supabase-icon-green)" d="M35 3 6 37c-2 2-1 5 2 5h25V5c0-3 1-4 2-2Z"/><path fill="#8aefb7" d="M29 61 58 27c2-2 1-5-2-5H31v37c0 3-1 4-2 2Z"/></svg></div><div class="platform-data-chip">● ● ● <span>DADOS CONECTADOS</span></div><div class="platform-stage-tag">DADOS QUE DÃO VIDA AO PROJETO</div></div>
+          <div class="platform-card-copy"><p class="platform-card-kicker">03 · BANCO DE DADOS</p><h3>Supabase</h3><p>Quando o projeto precisa guardar informações, usamos o Supabase para estruturar dados e conectar cadastros e funcionalidades ao site ou aplicativo.</p><span class="platform-card-footnote">Informações organizadas para o seu sistema.</span></div>
+        </div></div></article>
+      </div>
+    </section>
+    <section class="platform-section intelligence-section connected-section" id="ia-e-aplicativos" aria-labelledby="intelligence-title">
+      <svg class="platform-ribbon" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <header class="platform-heading"><p class="platform-eyebrow">IA, AUTOMAÇÃO E APLICATIVOS</p><h2 id="intelligence-title">Seu negócio com<br/><span>novas possibilidades.</span></h2><p>Criamos aplicativos e integramos inteligência artificial ao WhatsApp e ao site, com soluções pensadas para a rotina da sua empresa.</p></header>
+      <div class="platform-grid">
+        <article class="platform-card" style="--platform-order: 0"><div class="platform-card-reveal"><div class="platform-card-surface">
+          <div class="platform-stage platform-stage-ai-chat" aria-hidden="true"><div class="platform-icon platform-icon-whatsapp"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M54 30a22 22 0 0 1-33 19L8 54l4-14a22 22 0 1 1 42-10Z"/><path d="M24 19c-8 4 9 28 18 19l-7-6-4 3-7-10 3-2Z"/></svg><span class="platform-ai-badge">IA</span></div><div class="platform-message platform-message-one">Olá! Como posso ajudar?</div><div class="platform-message platform-message-two"><i></i><i></i><i></i></div><div class="platform-stage-tag">CONVERSAS MAIS INTELIGENTES</div></div>
+          <div class="platform-card-copy"><p class="platform-card-kicker">01 · IA NO WHATSAPP</p><h3>Atendimento conectado</h3><p>Integramos IA ao WhatsApp para responder dúvidas, organizar as primeiras informações e encaminhar conversas para a sua equipe.</p><span class="platform-card-footnote">Automação com espaço para o contato humano.</span></div>
+        </div></div></article>
+        <article class="platform-card" style="--platform-order: 1"><div class="platform-card-reveal"><div class="platform-card-surface">
+          <div class="platform-stage platform-stage-ai-web" aria-hidden="true"><div class="platform-ai-browser"><div><i></i><i></i><i></i><span>seusite.com.br</span></div><strong>Uma experiência<br/>mais inteligente.</strong><span class="platform-ai-browser-line"></span><span class="platform-ai-browser-line"></span></div><div class="platform-web-assistant"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="m24 5 5 13 14 6-14 5-5 14-6-14-13-5 13-6Z"/></svg><span>Como podemos ajudar?</span><b>IA</b></div><div class="platform-stage-tag">INTELIGÊNCIA DENTRO DO SITE</div></div>
+          <div class="platform-card-copy"><p class="platform-card-kicker">02 · IA NO SITE</p><h3>Seu site também conversa</h3><p>Criamos assistentes que ajudam visitantes a encontrar informações, conhecer serviços e dar o próximo passo dentro do seu site.</p><span class="platform-card-footnote">Respostas conectadas ao conteúdo do negócio.</span></div>
+        </div></div></article>
+        <article class="platform-card" style="--platform-order: 2"><div class="platform-card-reveal"><div class="platform-card-surface">
+          <div class="platform-stage platform-stage-app" aria-hidden="true"><div class="platform-app-phone"><div class="platform-app-camera"></div><small>SEU NEGÓCIO</small><strong>Tudo conectado.</strong><div class="platform-app-widgets"><i>↗</i><i>◷</i><i>▦</i><i>✓</i></div><div class="platform-app-chart"><i></i><i></i><i></i><i></i><i></i></div><div class="platform-app-nav">⌂　 ◇　 ◎</div></div><span class="platform-app-tile platform-app-tile-one">&lt;/&gt;</span><span class="platform-app-tile platform-app-tile-two">✓</span><div class="platform-stage-tag">IDEIAS QUE VIRAM APLICATIVOS</div></div>
+          <div class="platform-card-copy"><p class="platform-card-kicker">03 · APLICATIVOS</p><h3>Soluções sob medida</h3><p>Desenvolvemos aplicativos para aproximar clientes, organizar processos e conectar funcionalidades, dados e integrações em uma experiência própria.</p><span class="platform-card-footnote">Do planejamento à experiência de uso.</span></div>
+        </div></div></article>
+      </div>
+    </section>
+    <section class="closing-section connected-section" id="contato" aria-labelledby="closing-title">
+      <svg class="platform-ribbon" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <div class="closing-perspective">
+        <div class="closing-panel-reveal"><div class="closing-panel">
+          <div class="closing-halo" aria-hidden="true"></div>
+          <p class="closing-eyebrow">VAMOS COMEÇAR?</p>
+          <h2 id="closing-title">Sua próxima presença<br/>digital começa aqui.</h2>
+          <p class="closing-description">Conte um pouco sobre sua empresa e vamos desenvolver uma experiência digital personalizada para o seu negócio.</p>
+          <a class="closing-button" href="https://wa.me/5548984683627?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20meu%20projeto." target="_blank" rel="noopener noreferrer" data-contact-whatsapp>Solicitar orçamento <span aria-hidden="true">→</span></a>
+        </div></div>
+      </div>
+    </section>
+    <footer class="site-footer" aria-label="Rodapé Ascend Web">
+      <div class="footer-main">
+        <div class="footer-brand-column">
+          <a class="footer-logo" href="#inicio" aria-label="Ascend Web — voltar ao início">
+            <svg class="footer-logo-symbol" viewBox="0 0 100 120" aria-hidden="true"><defs><linearGradient id="footer-logo-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0a7"/><stop offset=".5" stop-color="#d2ab57"/><stop offset="1" stop-color="#f5da8c"/></linearGradient></defs><g fill="url(#footer-logo-gold)" font-family="Georgia, 'Times New Roman', serif" font-size="76" text-anchor="middle"><text x="50" y="69">A</text><text x="50" y="112">W</text></g></svg>
+            <span class="footer-logo-wordmark" aria-hidden="true"><strong>ASCEND</strong><span>WEB</span></span>
+          </a>
+          <p>Sites profissionais para empresas que querem fortalecer sua<br class="footer-desktop-break"/> presença digital.</p>
+        </div>
+        <nav class="footer-navigation" aria-label="Navegação do rodapé">
+          <h2>Navegação</h2>
+          <a href="#inicio">Início</a>
+          <a href="#projetos">Portfólio</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#manutencao">Manutenção</a>
+        </nav>
+        <div class="footer-contact">
+          <h2>Contato</h2>
+          <a href="https://wa.me/5548984683627" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp: (48) 98468-3627">(48) 98468-3627</a>
+          <a class="footer-instagram" href="https://www.instagram.com/ascension_web/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg><span>@ascension_web</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Ascend Web. Todos os direitos reservados.</p><p>Desenvolvido por <strong>Riolly</strong></p></div>
+    </footer>
+    <dialog class="collection-dialog" aria-labelledby="collection-dialog-title">
+      <button class="collection-dialog-close" type="button" aria-label="Fechar projeto">×</button>
+      <h2 id="collection-dialog-title"></h2>
+      <img class="collection-dialog-image" alt="" />
+    </dialog>
+    <a class="whatsapp-float" href="https://wa.me/5548984683627?text=Ol%C3%A1%21%20Conheci%20a%20Ascend%20Web%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20minha%20empresa.%20Poderiam%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Ascend Web pelo WhatsApp">
+      <svg viewBox="0 0 32 32" aria-hidden="true" fill="currentColor"><path d="M16 2.5a13 13 0 0 0-11.3 19.4L3 29l7.3-1.9A13 13 0 1 0 16 2.5Zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-4.3 1.1 1.1-4.2-.3-.4A10.6 10.6 0 1 1 16 26.1Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.7 5.8 5.2.8.3 1.4.5 1.9.6.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.1-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4Z"/></svg>
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>
