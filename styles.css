@@ -37,11 +37,10 @@
 .maintenance-plan-price { margin: 0 0 26px; color: #faf8f0; text-align: center; font: 500 clamp(2rem, 3vw, 2.65rem)/1.1 Georgia, serif; letter-spacing: -.035em; }
 .maintenance-plan-price span { display: block; margin-top: 12px; color: #9b9484; font: 400 .75rem 'Inter', sans-serif; letter-spacing: .05em; }
 .maintenance-plan-description { margin: 0 0 26px; color: #b0aa9e; font-size: .84rem; line-height: 1.8; }
-.maintenance-plan-details summary { display: flex; align-items: center; justify-content: center; gap: 26px; padding: 16px; border: 1px solid #f0cd7e; border-radius: 7px; background: linear-gradient(110deg, #b58432, #edd087); color: #211806; list-style: none; font-size: .83rem; font-weight: 700; cursor: pointer; transition: box-shadow .3s; }
-.maintenance-plan-details summary::-webkit-details-marker { display: none; }
-.maintenance-plan-details summary:hover { box-shadow: 0 0 20px #e9b64d44; }
-.maintenance-plan-details summary:focus-visible { outline: 2px solid #fff0ba; outline-offset: 5px; }
-.maintenance-plan-details > p { margin: 18px 0 0; color: #beb8ac; font-size: .78rem; line-height: 1.7; }
+.maintenance-plan-contact { display: flex; align-items: center; justify-content: center; gap: 26px; padding: 16px; border: 1px solid #f0cd7e; border-radius: 7px; background: linear-gradient(110deg, #b58432, #edd087); color: #211806; list-style: none; font-size: .83rem; font-weight: 700; cursor: pointer; transition: box-shadow .3s; }
+.maintenance-plan-contact svg { width: 21px; height: 21px; flex-shrink: 0; }
+.maintenance-plan-contact:hover { box-shadow: 0 0 20px #e9b64d44; }
+.maintenance-plan-contact:focus-visible { outline: 2px solid #fff0ba; outline-offset: 5px; }
 .maintenance-plan.is-visible .maintenance-plan-card { animation: maintenance-card-float 8s ease-in-out infinite; }
 .maintenance-plan.is-visible .maintenance-orbit { animation: maintenance-orbit-spin 10s linear infinite; }
 .maintenance-plan.is-visible .maintenance-plan-emblem i { animation: maintenance-status-glow 3s ease-in-out infinite; }
@@ -420,6 +419,7 @@
   box-shadow: 0 0 15px #e6ac3f18;
 }
 .about-visual-features b { display: block; margin-bottom: 7px; color: #f1c46b; font-size: 24px; font-weight: 500; }
+.about-feature-arrow { display: block; width: 27px; height: 27px; margin-inline: auto; }
 .about-growth-background { position: absolute; z-index: -1; inset: 25% -2% -5%; pointer-events: none; opacity: .65; }
 .about-growth-background > svg { position: absolute; inset: 0; width: 100%; height: 100%; filter: drop-shadow(0 0 6px #ffc34f88); }
 .about-growth-columns { position: absolute; inset: 15% 1% 0 8%; display: flex; align-items: end; gap: 18px; perspective: 900px; }
