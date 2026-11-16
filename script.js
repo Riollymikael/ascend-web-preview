@@ -264,7 +264,9 @@ if (featureSection && 'IntersectionObserver' in window) {
   const cardObserver = new IntersectionObserver(
     (entries) => {
       for (const entry of entries) {
-        entry.target.classList.toggle('is-visible', entry.isIntersecting);
+        if (!entry.isIntersecting) continue;
+        entry.target.classList.add('is-visible');
+        cardObserver.unobserve(entry.target);
 
         if (entry.target === firstFeatureCard && entry.isIntersecting) {
           featureSection.classList.add('is-in-view');
@@ -551,7 +553,7 @@ if (portfolioShowcase) {
   }
 }
 
-if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
   document.querySelectorAll('[data-tilt]').forEach((card) => {
     let frame = 0;
     let pointerX = 0;
