@@ -55,6 +55,7 @@ if (journey) {
   art.style.height = '1px';
   art.style.visibility = 'hidden';
   const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const mobileRibbon = window.matchMedia('(max-width: 650px), (max-width: 980px) and (pointer: coarse)');
   const strands = Array.from({ length: 36 }, (_, index) => {
     const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     path.style.strokeWidth = index === 0 || index === 35 ? '1.8' : '.75';
@@ -76,6 +77,7 @@ if (journey) {
     journeySplit = finalSection.top - bounds.top + finalSection.height * .75;
   }
   function paintJourney(time) {
+    const thickness = mobileRibbon.matches ? 1.55 : 1;
     const start = Math.max(0, Math.floor((window.scrollY - journeyTop - 220) / 28) * 28);
     const end = Math.min(journeyHeight, window.scrollY - journeyTop + window.innerHeight + 250);
     // Keep the filtered SVG surface near the viewport instead of allocating one
@@ -93,7 +95,7 @@ if (journey) {
     for (let y = start; y <= Math.min(journeyHeight, end + 28); y += 28) {
       const phase = y / 550 - time * .6;
       const fork = Math.max(0, Math.min(1, (y - journeySplit) / Math.max(1, journeyHeight - journeySplit)));
-      samples.push({ y, center: 500 + Math.sin(y / 900 - time * .12) * 8, width: 27 + Math.cos(phase) * 9, depth: Math.sin(phase) * 17 * (1 - fork), spread: 560 * fork * fork });
+      samples.push({ y, center: 500 + Math.sin(y / 900 - time * .12) * 8, width: (27 + Math.cos(phase) * 9) * thickness, depth: Math.sin(phase) * 17 * (1 - fork) * thickness, spread: 560 * fork * fork });
     }
     strands.forEach(({ path, lane }) => {
       const laneDepth = Math.sqrt(Math.max(0, 1 - lane * lane));
@@ -119,6 +121,15 @@ if (journey) {
   function syncJourney() {
     if (journeyVisible && !document.hidden && !journeyFrame) journeyFrame = requestAnimationFrame(animateJourney);
   }
+  function syncRibbonThickness() {
+    strands.forEach(({ path }, index) => {
+      const base = index === 0 || index === 35 ? 1.8 : .75;
+      path.style.strokeWidth = String(base * (mobileRibbon.matches ? 1.35 : 1));
+    });
+    syncJourney();
+  }
+  syncRibbonThickness();
+  mobileRibbon.addEventListener('change', syncRibbonThickness);
   measureJourney();
   if ('ResizeObserver' in window) new ResizeObserver(() => { measureJourney(); syncJourney(); }).observe(journey);
   else window.addEventListener('resize', () => { measureJourney(); syncJourney(); });
